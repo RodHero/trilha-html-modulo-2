@@ -5,13 +5,14 @@ body {
     background-color: #f1f1f1;
     display: flex;
     justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .wrapper {
     width: 1200px;
     display: flex;
     margin: 0 auto;
-    background-color: aquamarine;
+    background-color: rgb(87, 187, 245);
 }
 .main {
     display: flex;
@@ -20,11 +21,11 @@ body {
 }
 .menu {
     width: 15%;
-    background-color: aqua;
+    background-color: rgb(35, 206, 236);
     padding: 10px 20px 0px;
 }
 .header {
-    background-color: rgb(5, 108, 108);
+    background-color: rgb(255, 255, 255);
     min-height: 150px;
 }
 .content {
@@ -33,6 +34,8 @@ body {
     padding: 20px;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
+    background-color: rgb(240, 56, 56);
     min-height: 150px;
+    color:white
+    
 }

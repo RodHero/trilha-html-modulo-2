@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template - Utilizar como modelo</title>
     <link rel="stylesheet" href="Assets/base.css">
+    <style>
+        table tr:nth-child(even) {
+            background-color: rgb(87, 187, 245) ;
+        }
+        table tr:hover td{
+            background-color: rgb(192, 192, 192) ;
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
-        <div class="menu" style="background-color: rgb(42, 213, 235);">
-            <!-- Aqui vai o seu menu -->
+        <div class="menu">
             <ul>
                 <li><a href="template.html" target="_self">Página Principal</a></li>
                 <li><a href="Sobre.html" target="_self">Sobre a Clínica</a></li>
@@ -21,102 +28,112 @@
         </div>
 
         <div class="main">
-            <div class="header" style="background-color: white;">
-                <img src="Imagens/hora.jpg" title="Clínica Explode Coração" alt="Fundo azul celeste, linhas brancas imitando um eletrocardiograma, 
-                um coração vermelho e um estetoscópio ao fundo. Os elementos estão sobrepostos. Essa combinação se
-                repete quatro vezes, uma ao lado da outra." 
-                width="1000" height="165">
+            <div class="header">
+                <img src="Imagens/hora.jpg" title="Clínica CardioFit - Cardiologia Especializada" alt="Mapa mundi,
+                parcialmente coberto por areia acinzentada, sobre esta, um relógio de bolso, deslocado levente a esqueda 
+                em relação ao centro da imagem." width="1000" height="165">
 
             </div>  
     
             <div class="content">
-                <table summary="Horários de atendimento e valores" cellspacing="20" border=0 align="center">
-                    <tr>
-                        <th><strong><u><font size="6">Horários de Atendimento e Valores</font></u></strong></th>                     
-                    </tr>
-                </table>  
+                <p> <font size="5">Nossa clínica trabalha com as seguintes subespecialidades:</font></p>
+                <ul>
+                    <li><font size="4">Eletrofisiologia Cardíaca: É a subespecialidade responsável por avaliar anormalidades em 
+                        relação ao ritmo cardíaco.</font></li>
+                    <li><font size="4">Miocardiopatias: É o ramo da cardiologia que avalia alterações no miocárdio que 
+                        impedem o funcionamento correto do coração.</font></li>
+                    <li><font size="4">Hipertensão Arterial: É o campo que estuda a alteração nos vasos sanguíneos comumente
+                        conhecida como "Pressão Alta".</font></li>
+                    <li><font size="4">Ergometria e reabilitação: O profissional dessa área realiza o acompanhamento
+                        do paciente em reabilitação, e acompanha os dados obtidos através de exames como 
+                        o eletrocardiograma.</font></li>
+                </ul>
+                <hr>
 
-                <table summary="Horários e valores" cellpadding="5" cellspacing="3" border=1 align="center">
-                    <tr>
-                        <th><strong><u><font size="5">Serviços</font></u></strong></th>
-                        <th><strong><u><font size="5">Segunda a Sexta</font></u></strong></th>
-                        <th><strong><u><font size="5">Sábados</font></u></strong></th>
-                        <th><strong><u><font size="5">Feriados</font></u></strong></th>                     
-                    </tr>
-                    <tr>
-                        <td>
-                            <font size="4"> Eletrofisiologia Cardíaca</font>
-                        </td>
-                        <td>
-                        <font size="4"> 09h às 22h - R$ 100,00  </font>
-                        </td>
-                        <td>
-                            <font size="4"> 12h ás 16h - R$ 120,00  </font>
-                        </td>
-                        <td>
-                            <font size="4"> 12h ás 15h - R$ 150,00 </font>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                                <font size="4"> Miocardiopatias</font>
+                <p style="text-align:center;"><strong><font size="6">Horários de Atendimento e Valores</font></strong></p> 
+
+                <table summary="Horários de atendimento e valores" cellpadding="5" cellspacing="3" border=1 align="center">
+                    <thead>
+                        <tr>
+                            <th><strong><u><font size="5">Serviços</font></u></strong></th>
+                            <th><strong><u><font size="5">Segunda a Sexta</font></u></strong></th>
+                            <th><strong><u><font size="5">Sábados</font></u></strong></th>
+                            <th><strong><u><font size="5">Feriados</font></u></strong></th>                     
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <font size="4"> Eletrofisiologia Cardíaca</font>
                             </td>
                             <td>
-                            <font size="4"> 09h às 22h - R$ 120,00  </font>
+                            <font size="4"> 09h às 22h - R$ 50,00  </font>
                             </td>
                             <td>
-                                <font size="4"> 12h ás 16h - R$ 150,00  </font>
+                                <font size="4"> 12h ás 16h - R$ 60,00  </font>
                             </td>
                             <td>
-                                <font size="4"> 12h ás 15h - R$ 170,00 </font>
+                                <font size="4"> 12h ás 15h - R$ 70,00 </font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                    <font size="4"> Miocardiopatias</font>
+                                </td>
+                                <td>
+                                <font size="4"> 09h às 22h - R$ 60,00  </font>
+                                </td>
+                                <td>
+                                    <font size="4"> 12h ás 16h - R$ 70,00  </font>
+                                </td>
+                                <td>
+                                    <font size="4"> 12h ás 15h - R$ 80,00 </font>
+                            </td>
+                        </tr>
+                            <td>
+                                <font size="4">Hipertensão Arterial</font>
+                            </td>
+                            <td>
+                            <font size="4"> 09h às 22h - R$ 40,00  </font>
+                            </td>
+                            <td>
+                                <font size="4"> 12h ás 16h - R$ 60,00  </font>
+                            </td>
+                            <td>
+                                <font size="4"> 12h ás 15h - R$ 70,00 </font>
+                            </td>
+                        </tr>
+                        </tr>
+                        <td>
+                            <font size="4">Ergometria e reabilitação</font>
+                        </td>
+                        <td>
+                        <font size="4"> 09h às 22h - R$ 80,00  </font>
+                        </td>
+                        <td>
+                            <font size="4"> 12h ás 16h - R$ 90,00  </font>
+                        </td>
+                        <td>
+                            <font size="4"> 12h ás 15h - R$ 100,00 </font>
                         </td>
                     </tr>
-                        <td>
-                            <font size="4">Hipertensão Arterial</font>
-                        </td>
-                        <td>
-                        <font size="4"> 09h às 22h - R$ 70,00  </font>
-                        </td>
-                        <td>
-                            <font size="4"> 12h ás 16h - R$ 140,00  </font>
-                        </td>
-                        <td>
-                            <font size="4"> 12h ás 15h - R$ 210,00 </font>
-                        </td>
-                    </tr>
-                    </tr>
-                    <td>
-                        <font size="4">Ergometria e reabilitação</font>
-                    </td>
-                    <td>
-                    <font size="4"> 09h às 22h - R$ 300,00  </font>
-                    </td>
-                    <td>
-                        <font size="4"> 12h ás 16h - R$ 350,00  </font>
-                    </td>
-                    <td>
-                        <font size="4"> 12h ás 15h - R$ 350,00 </font>
-                    </td>
-                </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" align="center">Para tratar de outra especialidade, por favor
+                                entrar em <a href="contato.html" target="_self">contato</a>.
+                            </td>
+                        </tr>
+                    </tfoot>
                 </table>
                 
             </div>
     
-            <div class="footer" style="background-color: rgb(42, 213, 235);">
-                <table summary="Informações úteis" cellspacing="20" border=0 align="center">
-                    <tr>
-                        <th><strong><u>Doutora Sofia Hikari - Cardiologista</u></strong></th>                     
-                    </tr>
-                    <tr>
-                        <th><strong><u>Avenida dos Manguesais,1509. Perícles Ozório/ZR</u></strong></th>
-                    </tr>
-                    <tr>
-                        <th><strong><u>Celular e whatsapp: (55) 555555555</u></strong></th>
-                    </tr>
-                    <tr>
-                        <th><strong><u>E-mail: yuiwerieuwh@bol.com.zr</u></strong></th>
-                    </tr>
-                </table>
+            <div class="footer">
+                <p style="text-align:center;"><strong><u>Clínica CardioFit - Cardiologia Especializada</u></strong></p>
+                <p style="text-align:center;"><strong><u>Rod. Mário Covas, 2672 - Una, Belém - PA, CEP: 66652-080</u></strong></p>
+                <p style="text-align:center;"><strong><u>Celular e whatsapp: (55) 55555-5555</u></strong></p>
+                <p style="text-align:center;"><strong><u>E-mail: yuiwerieuwh@bol.com.br</u></strong></p>
             </div>
         </div>
     </div>
